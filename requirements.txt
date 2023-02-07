@@ -1,0 +1,4 @@
+graia-ariadne>=0.10.3
+undetected_chromedriver
+toml
+Pillow>=9.3.0

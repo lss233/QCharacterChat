@@ -1,0 +1,4 @@
+config.cfg
+__pycache__/
+.vscode/
+python3.9/
