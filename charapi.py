@@ -11,8 +11,6 @@ from loguru import logger
 class CharacterBot:
     def __init__(self, characterId):
         options = uc.ChromeOptions()
-        options.headless = True
-        options.add_argument( '--headless' )
         logger.trace("启动浏览器中……")
         self.driver = uc.Chrome(options=options)
         self.driver.get("https://beta.character.ai/chat?char=" + characterId)
