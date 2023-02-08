@@ -30,11 +30,10 @@ class CharacterBot:
         send_button = self.driver.find_element(By.XPATH, "//form/div/div/div[2]/button[1]")
         while not send_button.is_enabled():
             time.sleep(0.5)
-
         text_box = self.driver.find_element(By.CSS_SELECTOR, "#user-input")
         text_box.clear()
         text_box.send_keys(message, Keys.ENTER)
-
+        logger.trace("提问已发送，等待回复……")
         while not send_button.is_enabled():
             time.sleep(0.5)
 
